@@ -13,6 +13,7 @@ specifiers:
   '@types/node': 16.11.36
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
+  '@types/react-helmet': 6.1.5
   '@typescript-eslint/eslint-plugin': 5.27.0
   '@typescript-eslint/parser': 5.27.0
   autoprefixer: 10.4.7
@@ -74,6 +75,7 @@ devDependencies:
   '@types/node': 16.11.36
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
+  '@types/react-helmet': 6.1.5
   '@typescript-eslint/eslint-plugin': 5.27.0_jdfhxvz2k566jovgo27gacve2a
   '@typescript-eslint/parser': 5.27.0_hcfsmds2fshutdssjqluwm76uu
   autoprefixer: 10.4.7_postcss@8.4.14
@@ -4575,6 +4577,12 @@ packages:
 
   /@types/react-dom/18.0.5:
     resolution: {integrity: sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==}
+    dependencies:
+      '@types/react': 18.0.9
+    dev: true
+
+  /@types/react-helmet/6.1.5:
+    resolution: {integrity: sha512-/ICuy7OHZxR0YCAZLNg9r7I9aijWUWvxaPR6uTuyxe8tAj5RL4Sw1+R6NhXUtOsarkGYPmaHdBDvuXh2DIN/uA==}
     dependencies:
       '@types/react': 18.0.9
     dev: true
