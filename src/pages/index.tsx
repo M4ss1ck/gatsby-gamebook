@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (page && page.id) window.localStorage.setItem(`page`, page.id);
-  }, [page, page.id]);
+  }, [page, page?.id]);
   return (
     <>
       <SEO title="My Gamebook" />
