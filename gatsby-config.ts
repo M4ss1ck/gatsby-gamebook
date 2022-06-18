@@ -1,8 +1,18 @@
 import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
-  // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
-  // don't need to define it here (just if you need to change the options)
+  siteMetadata: {
+    title: `Gamebook template`,
+    author: {
+      name: `Massick`,
+      summary: `Web developer`,
+    },
+    description: `A free and open source Gamebook template using GatsbyJS`,
+    siteUrl: `https://massick.is-a.dev/`,
+    social: {
+      twitter: `M4ss1ck`,
+    },
+  },
   plugins: [
     `gatsby-plugin-pnpm`,
     `gatsby-plugin-postcss`,
