@@ -37,6 +37,7 @@ specifiers:
   gatsby-plugin-pnpm: 1.2.10
   gatsby-plugin-postcss: 5.16.0
   gatsby-plugin-react-helmet: 5.16.0
+  husky: 8.0.1
   identity-obj-proxy: 3.0.0
   jest: 28.1.0
   jest-environment-jsdom: 28.1.0
@@ -96,6 +97,7 @@ devDependencies:
   eslint-plugin-react: 7.30.0_eslint@8.15.0
   eslint-plugin-react-hooks: 4.5.0_eslint@8.15.0
   gatsby-plugin-postcss: 5.16.0_dn77l6ktgw2if7tk6ocn5vcpje
+  husky: 8.0.1
   identity-obj-proxy: 3.0.0
   jest: 28.1.0_@types+node@16.11.36
   jest-environment-jsdom: 28.1.0
@@ -9683,6 +9685,12 @@ packages:
   /human-signals/2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
+
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
