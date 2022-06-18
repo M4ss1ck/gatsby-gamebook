@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "start": "gatsby develop",
+    "dev": "gatsby develop -H 0.0.0.0 -o",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
