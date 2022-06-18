@@ -4,6 +4,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Gamebook)
 
 > A gamebook is a work of printed fiction that allows the reader to participate in the story by making choices. The narrative branches along various paths, typically through the use of numbered paragraphs or pages. Each narrative typically does not follow paragraphs in a linear or ordered fashion. Gamebooks are sometimes called choose your own adventure books or CYOA after the influential Choose Your Own Adventure series originally published by US company Bantam Books. Gamebooks influenced hypertext fiction.
 
+Here you can make yor own Gamebook by modifying [pages.ts file](./src/data/pages.ts)
+
 ## Features
 
 This project is based on [gatsby-starter-ts](https://github.com/jpedroschmitz/gatsby-starter-ts)
