@@ -9,11 +9,10 @@ html {
 }
 
 html.dark {
-  box-shadow: none
+  box-shadow: none;
 }
 
 p {
-  margin: 0;
   text-align: justify;
   text-indent: 1.5em;
   line-height: 125%;
@@ -22,7 +21,7 @@ p {
 h1 {
   font-size: 1.5em;
   margin: 2.5em 0;
-  font-family: "Hobo", Hobo;
+  font-family: 'Hobo', Hobo;
   font-weight: normal;
 }
 
@@ -38,12 +37,12 @@ hr + p,
 }
 
 @font-face {
-  font-family: "Hobo";
+  font-family: 'Hobo';
   src: url(../fonts/OPTIHobo-BoldAgency.otf);
 }
 
 .h1alt {
-  font-family: "Hobo", Hobo;
+  font-family: 'Hobo', Hobo;
   margin: 1.5em 0 2.5em 0;
   font-size: 1.5em;
   text-align: center;
@@ -51,7 +50,7 @@ hr + p,
 }
 
 .doble {
-  font-family: "Hobo", Hobo;
+  font-family: 'Hobo', Hobo;
   margin: 2.5em 0 1.5em 0;
   font-size: 1.5em;
   text-align: center;
