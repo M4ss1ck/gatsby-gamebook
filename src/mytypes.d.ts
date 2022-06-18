@@ -24,4 +24,4 @@ interface Links {
   random?: boolean;
 }
 
-export { IPage, PageDict, IContent, Links };
+export { IPage, PageDict, IContent, Links, Action };
