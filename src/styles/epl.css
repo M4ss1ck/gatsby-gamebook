@@ -1,0 +1,390 @@
+/* ePub base r2.1 ePubLibre - epl.css*/
+
+/*********** NO MODIFIQUE ESTA HOJA DE ESTILOS *********/
+
+/* RESET DE ELEMENTOS HTML */
+address, blockquote, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, hr, li, ol, p, pre, ul {
+    font-size: 1em;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+a, abbr, b, bdi, bdo, cite, code, data, del, dfn, em, i, ins, kbd, mark, q, rp, rt, rtc, ruby, s, samp, small, span, strong, sub, sup, time, var {
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+/*  DEFINICION DE ELEMENTOS GLOBALES (NO MODIFICABLES)  */
+body {
+    border: 0;
+    font-size: 1em;
+    orphans: 2;
+    padding: 0;
+    widows: 2;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a, .normal {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    -webkit-text-fill-color: inherit;
+}
+
+sub {
+    font-size: 0.75em;
+    line-height: 1.2;
+    vertical-align: sub;
+    vertical-align: -20%;
+}
+
+sup {
+    font-size: 0.75em;
+    line-height: 1.2;
+    vertical-align: super;
+    vertical-align: 35%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/******************* Tipografía **********************/
+.sans, .sans p, .sans em, .sans strong, .sans big, .sans small {
+    font-family: sans-serif;
+}
+
+.serif, .serif p, .serif em, .serif strong, .serif big, .serif small {
+    font-family: serif;
+}
+
+code, kbd, samp, var, .mono, .mono p, .mono em, .mono strong, .mono big, .mono small {
+    font-family: monospace;
+}
+
+i, em, cite, dfn, .cursiva, .cursiva p {
+    font-style: italic;
+}
+
+i i, i cite, i dfn, i em, cite i, cite cite, cite dfn, cite em, dfn i, dfn cite, dfn dfn, dfn em, em i, em cite, em dfn, em em, .cursiva i, .cursiva cite, .cursiva dfn, .cursiva em {
+    font-style: normal;
+}
+
+b, strong, .negrita, negrita p {
+    font-weight: bold;
+}
+
+blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-right: 9%;
+    margin-bottom: 1em;
+    margin-left: 9%;
+    quotes: none;
+}
+
+ins, .subrayado {
+    text-decoration: underline;
+}
+
+del, s, .tachado {
+    text-decoration: line-through;
+}
+
+big, .grande {
+    font-size: 1.2em;
+}
+
+/* para texto en mayúsculas, de tamaño similar al de las minúsculas */
+small, .versalita {
+    font-size: 0.8em;
+}
+
+mark {
+    background-color: yellow;
+    color: inherit;
+}
+
+.oculto {
+    display: none;
+    visibility: hidden;
+}
+
+/******************* Alineación *******************/
+.izquierda, .izquierda p {
+    text-align: left;
+}
+
+.derecha, .derecha p {
+    text-align: right;
+    text-indent: 0;
+}
+
+.centrado, .centrado p {
+    text-align: center;
+    text-indent: 0;
+}
+
+.justificado, .justificado p {
+    text-align: justify;
+}
+
+.asangre, .asangre p {
+    text-indent: 0;
+}
+
+/******************** Bloques ********************/
+.sinmargen {
+    margin: 0;
+}
+
+/* evita dividir un elemento entre páginas */
+.bloque {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+/* evita dividir una palabra entre líneas */
+abbr, .nosep {
+    text-indent: 0;
+    display: inline-block;
+}
+
+/* evita división aleatoria de párrafos muy extensos (bug ADE) */
+.extenso {
+    orphans: 0;
+    widows: 0;
+}
+
+/****************** Listas *******************/
+ul, ol {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 9%;
+}
+
+ul ul {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+ol ol {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+li {
+    margin: 0;
+    text-align: justify;
+    text-indent: 0;
+}
+
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+dt {
+    display: block;
+    margin: 1em 0 0 0;
+}
+
+dd {
+    display: block;
+    margin-left: 9%;
+    text-align: justify;
+}
+
+dt, pre {
+    text-align: left;
+}
+
+/**************** salto de contexto ****************/
+hr {
+    width: 0;
+    margin: 0;
+    height: 2.5em;
+    border: none;
+    background: none;
+}
+
+/* Valores minimos para los encabezados (el reset los deja sin ninguno por defecto */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1em 0;
+    text-align: center;
+}
+
+/***** Evitar división de contenido entre páginas *********/
+h1, h2, h3, h4, h5, h6, dt, hr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/************ CONTROL DE SILABEO ********************/
+h1, h2, h3, h4, h5, h6, abbr, dt, pre, address, table, caption, th, td, .tlogo, .tautor, .ttitulo, .tsubtitulo, .tserie, .trevision, .tfirma, .info, .izquierda, .derecha, .centrado {
+    adobe-hyphenate: none;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    -epub-hyphens: none;
+    hyphens: none;
+}
+
+/*  ESTILOS DE SECCIONES FIJAS DE EPL (NO MODIFICABLES)  */
+p {
+    text-align: justify;
+    text-indent: 0;
+    line-height: 125%;
+}
+
+.cubierta {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    text-align: center;
+    text-indent: 0;
+    page-break-before: always;
+    page-break-after: always;
+}
+
+.cubierta img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.tautor, .ttitulo, .tsubtitulo, .tserie, .trevision, .tfirma {
+    margin: 0 20px;
+    text-align: center;
+    text-indent: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+div.tlogo {
+    display: block;
+    margin: 15% 37.5% 8%;
+    width: 25%;
+    height: auto;
+}
+
+.tautor {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #595959;
+}
+
+.ttitulo {
+    padding: 0;
+    border: 0;
+    font-size: 1.8em;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    visibility: visible;
+}
+
+.tsubtitulo, .tserie {
+    margin: 0.3em 5% 0;
+}
+
+.trevision {
+    margin-top: 2.5em;
+    font-size: 0.8em;
+    color: #595959;
+}
+
+.tfirma {
+    margin-top: 0.25em;
+    font-size: 0.65em;
+}
+
+.tfecha {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #595959;
+}
+
+.sinopsis {
+    margin-top: 10%;
+}
+
+.sinopsis p, .autor, .autor p, .nota p {
+    margin: 0.5em 0;
+    text-indent: 0;
+    font-size: 1em;
+    color: inherit;
+}
+
+.info {
+    margin: 10% 5% 0;
+    font-size: 0.8em;
+    width: 90%;
+}
+
+.info p {
+    text-align: left;
+    text-indent: 0;
+    margin: 0;
+}
+
+.vineta {
+    padding: 1em 0;
+    text-align: center;
+    text-indent: 0;
+    display: block;
+}
+
+.nota {
+    padding-top: 10%;
+    page-break-before: always;
+}
+
+#iautor {
+    height: 40%;
+    width: auto;
+}
+
+.icono_fuente {
+    width: 7%;
+    height: auto;
+}
+
+.bloque_exlibris {
+    display: block;
+    margin: 5% 37.5% 0;
+    width: 25%;
+    height: auto;
+}
+
+.ancho_full {
+    width: 100%;
+}

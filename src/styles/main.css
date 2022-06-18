@@ -1,0 +1,27 @@
+html,
+body,
+#app {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+html.dark {
+  background: #121212;
+}
+
+.btn {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.534), 0 0 1.5rem #8f5922 inset;
+  background: #fffef0;
+}
+
+.dark .btn {
+  box-shadow: 0 0 1.5rem #8f8d8b50 inset;
+  background: #080808;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+}
