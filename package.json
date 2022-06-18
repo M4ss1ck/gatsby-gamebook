@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-ts",
-  "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
+  "name": "gatsby-gamebook",
+  "description": "let the reader to participate in your story by making choices",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (https://joaopedro.dev)",
+  "author": "Massick <massick@systemli.org> (https://massick.is-a.dev)",
   "license": "MIT",
   "keywords": [
     "gatsby",
-    "starter",
+    "template",
     "typescript"
   ],
   "scripts": {
