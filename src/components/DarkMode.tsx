@@ -4,7 +4,11 @@ export default function Footer() {
   const { isDark, toggleDark } = useDark();
   return (
     <nav className="absolute top-2 left-2">
-      <button className="icon-btn !outline-none" onClick={() => toggleDark()}>
+      <button
+        className="icon-btn !outline-none"
+        onClick={() => toggleDark()}
+        aria-hidden={true}
+      >
         {isDark ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
