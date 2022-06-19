@@ -6,7 +6,11 @@ import SEO from '@/components/Seo';
 import { pages } from '@/data/pages';
 
 export default function Home() {
-  const initialIndex = window.localStorage.getItem(`page`) ?? `intro`;
+  let initialIndex = `intro`;
+
+  if (typeof window !== `undefined`) {
+    initialIndex = window.localStorage.getItem(`page`) ?? `intro`;
+  }
 
   const [page, setPage] = useState(pages[initialIndex]);
 
