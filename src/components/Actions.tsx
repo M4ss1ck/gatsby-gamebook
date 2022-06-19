@@ -29,7 +29,7 @@ const Actions: React.FC<Links> = (props: Links) => {
           }
           className="text-left max-w-[80%] rounded-lg my-2 ml-2 p-2 btn"
         >
-          Continuar
+          {props.actions[0].text}
         </button>
       )}
     </div>
