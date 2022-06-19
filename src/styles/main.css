@@ -45,3 +45,8 @@ blockquote {
 blockquote p {
   display: inline;
 }
+
+pre {
+  max-width: 100vw;
+  overflow-x: auto;
+}
