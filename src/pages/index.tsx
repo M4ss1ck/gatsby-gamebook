@@ -35,12 +35,12 @@ export default function Home() {
         ) : (
           <>
             <div>
-              <h1>Error al seleccionar la página</h1>
+              <h1>Error with selected page</h1>
               <button
-                onClick={() => setPage(pages.intro)}
+                onClick={() => setPage(Object.entries(pages)[0][1])}
                 className="text-left w-[80%] border-l rounded-lg my-2 p-2 btn"
               >
-                Ir al principio
+                Go back
               </button>
             </div>
           </>
